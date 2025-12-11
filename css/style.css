@@ -1,2 +1,68 @@
 @import url('reset.css');
 @import url('font.css');
+
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    aspect-ratio: 1 / 2;
+    font-family: 'Phosphate', sans-serif;
+}
+
+.circle-text{
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: #FDF07E;
+    justify-content: center;
+    padding: 29px 96px;
+}
+
+title{
+    display: flex;
+    grid-column-start: 4;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: #5D2B8A;
+    color: #FDF07E;
+    align-items: center;
+    justify-content: center;
+    font-size: 200px;
+}
+
+.spiral{
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    background-color: #5D2B8A;
+    justify-content: center;
+}
+
+.small-poster{
+    display: flex;
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    background-color: #A50000;
+    justify-content: flex-end;
+}
+
+.card{
+    display: flex;
+    grid-column-start: 6;
+    grid-column-end: 9;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    
+}
