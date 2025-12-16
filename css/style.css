@@ -221,25 +221,38 @@ footer{
     justify-content: space-between;
     align-items: center;
     position: relative;
-    padding: 0 5%;
+    padding: 0 3%;
+    gap: 5%;
 }
 
 footer img{
     position: relative;
-    left: 5%;
+    left: 8%;
     bottom: -2%;
-    width: 25%;
+    width: 100%;
     z-index: 0;
 }
 
+footer div{
+    position: relative;
+    width: 28%;
+    height: auto;
+}
+
 footer span{
-    font-size: clamp(42px, 20vw, 680px);
-    -webkit-text-stroke: 10px #5D2B8A;
+    font-size: clamp(42px, 15vw, 680px);
+    -webkit-text-stroke: 20px #5D2B8A;
     z-index: 1;
     position: absolute;
+    top: 50%;
+    left: 77%;
+    transform: translate(-50%, -50%);
+    max-width: 166%;
 }
 
 footer p{
     font-family: 'Seymour One', sans-serif;
-    font-size: clamp(20px, 20vw, 200px);
+    font-size: clamp(20px, 15vw, 130px);
+    text-wrap: nowrap;
+    text-align: end;
 }
