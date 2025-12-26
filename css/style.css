@@ -209,7 +209,7 @@ title{
     grid-row-end: 8;
     background-color: #6CC5BD;
     color: #FDF07E;
-    font-size: clamp(38px, 20vw, 600px);
+    font-size: clamp(38px, 12vw, 600px);
     position: relative;
     white-space: nowrap;
 }
@@ -262,7 +262,7 @@ title{
     grid-row-end: 9;
     background-color: #F7CA4B;
     color: #A50000;
-    font-size: clamp(38px, 20vw, 600px);
+    font-size: clamp(38px, 12vw, 600px);
     letter-spacing: 0.12em;
     position: relative;
     white-space: nowrap;
@@ -440,7 +440,7 @@ footer{
     padding: 6%;
     gap: 5%;
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 footer img{
@@ -459,8 +459,82 @@ footer div{
 
 footer div p{
     font-family: 'Seymour One', sans-serif;
-    font-size: clamp(20px, 20vw, 80px);
+    font-size: clamp(10px, 3vw, 80px);
     text-align: end;
     white-space: normal;
     margin-left: auto;
+    text-wrap: nowrap;
+}
+
+@media (max-width: 800px){
+    body{
+        grid-template-rows: repeat(19, 1fr);
+        aspect-ratio: 1 / 2.375;
+    }
+    .percent-line{
+        grid-column-start: 1;
+        grid-column-end: 9;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    .question-line{
+        grid-column-start: 3;
+        grid-column-end: 9;
+        grid-row-start: 4;
+        grid-row-end: 5;  
+    }
+    .chips{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 14;
+        flex-wrap: wrap;
+    }
+    .suit{
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 5;
+        grid-row-end: 12; 
+    }
+    .hand{
+        grid-column-start: 5;
+        grid-column-end: 9;
+        grid-row-start: 5;
+        grid-row-end: 12; 
+    }
+    .small-poster{
+        grid-column-start: 3;
+        grid-column-end: 6;
+        grid-row-start: 12;
+        grid-row-end: 14; 
+    }
+    .card{
+        grid-column-start: 6;
+        grid-column-end: 9;
+        grid-row-start: 12;
+        grid-row-end: 14; 
+    }
+    .balls{
+        grid-column-start: 3;
+        grid-column-end: 7;
+        grid-row-start: 14;
+        grid-row-end: 18; 
+    }
+    .wheel{
+        grid-row-start: 14;
+        grid-row-end: 18; 
+        img{
+            left: -96%;
+        }
+    }
+    .spiral{
+        grid-column-start: 7;
+        grid-column-end: 9;
+        grid-row-start: 14;
+        grid-row-end: 18; 
+    }
+    footer{
+        grid-row-start: 18;
+        grid-row-end: 20; 
+    }
 }
