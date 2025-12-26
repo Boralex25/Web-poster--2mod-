@@ -22,7 +22,7 @@ body{
     grid-row-end: 3;
     background-color: #FDF07E;
     justify-content: center;
-    padding: 29px 96px;
+    padding: 10%;
 }
 
 .circle-text img{
@@ -536,5 +536,99 @@ footer div p{
     footer{
         grid-row-start: 18;
         grid-row-end: 20; 
+    }
+}
+
+@media (max-width: 475px){
+    body{
+        grid-template-rows: repeat(48, 1fr);
+        aspect-ratio: 1 / 6;
+    }
+    title{
+        grid-column-start: 1;
+        grid-column-end: 9;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+    .circle-text{
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 3;
+        grid-row-end: 5;
+    }
+    .percent-line{
+        grid-column-start: 1;
+        grid-column-end: 9;
+        grid-row-start: 19;
+        grid-row-end: 20;
+    }
+    .question-line{
+        grid-column-start: 1;
+        grid-column-end: 9;
+        grid-row-start: 33;
+        grid-row-end: 34;  
+    }
+    .chips{
+        grid-column-start: 1;
+        grid-column-end: 9;
+        grid-row-start: 24;
+        grid-row-end: 33;
+        flex-wrap: wrap;
+        img{
+            width: 50%;
+        }
+    }
+    .suit{
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 20;
+        grid-row-end: 24; 
+    }
+    .hand{
+        grid-column-start: 1;
+        grid-column-end: 9;
+        grid-row-start: 34;
+        grid-row-end: 45; 
+    }
+    .small-poster{
+        grid-column-start: 5;
+        grid-column-end: 9;
+        grid-row-start: 20;
+        grid-row-end: 24; 
+    }
+    .card{
+        grid-column-start: 1;
+        grid-column-end: 9;
+        grid-row-start: 5;
+        grid-row-end: 9; 
+    }
+    .balls{
+        grid-column-start: 1;
+        grid-column-end: 9;
+        grid-row-start: 45;
+        grid-row-end: 47; 
+        flex-wrap: nowrap;
+    }
+    .wheel{
+        grid-column-start: 1;
+        grid-column-end: 9;
+        grid-row-start: 9;
+        grid-row-end: 19;
+        img{
+            left: -61%;
+        }
+    }
+    .spiral{
+        grid-column-start: 5;
+        grid-column-end: 9;
+        grid-row-start: 3;
+        grid-row-end: 5; 
+        img{
+            width: 100%;
+        }
+    }
+    footer{
+        grid-row-start: 47;
+        grid-row-end: 49; 
     }
 }
