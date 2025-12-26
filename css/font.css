@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Seymour+One&display=swap');
 @font-face {
     font-family: 'Phosphate';
-    src: url(/assets/fonts/PhosphatePro-Inline.otf);
+    src: url(../assets/fonts/PhosphatePro-Inline.woff);
     font-weight: normal;
 }
