@@ -83,8 +83,13 @@ title{
     overflow: hidden;
 }
 
+.img-container{
+    transform: translateX(-55%) translateY(20%);
+}
+
 .small-poster img{
     animation: hand-motion 2s linear infinite;
+    width: 188%;
     transform-origin: bottom right;
 }
 
@@ -512,6 +517,12 @@ footer div p{
         grid-column-end: 4;
         grid-row-start: 13;
         grid-row-end: 16; 
+        img{
+            width: 100%;
+        }
+    }
+    .img-container{
+    transform: translateX(-5%) translateY(20%);
     }
     .card{
         grid-column-start: 4;
